@@ -38,5 +38,10 @@ const requestHandler = (req, res) => {
   res.write('</html>');
   res.end();
 };
-
-module.exports = requestHandler;
+// module.export examples
+// module.exports = requestHandler;
+// module.exports.handler = requestHandler;
+// exports.handler = requstHandler;
+module.exports = {
+  handler: requestHandler,
+};
